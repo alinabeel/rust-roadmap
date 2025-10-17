@@ -1,0 +1,38 @@
+[workspace]
+resolver = "2"
+members = [
+    "beginner/hello-world",
+    "beginner/calculator",
+    "beginner/guessing-game",
+    "beginner/todo-list",
+    "beginner/temperature-converter",
+    "intermediate/web-server",
+    "intermediate/file-organizer",
+    "intermediate/chat-app",
+    "intermediate/database-orm",
+    "intermediate/image-processor",
+    "intermediate/rest-api",
+    "professional/os-kernel",
+    "professional/blockchain",
+    "professional/game-engine",
+    "professional/wasm-runtime",
+    "professional/database-engine",
+    "professional/compiler",
+    "professional/distributed-systems",
+    "professional/hpc-computing"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Rust Learner <learner@example.com>"]
+license = "MIT"
+
+[workspace.dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+thiserror = "1.0"
